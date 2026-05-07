@@ -1,0 +1,20 @@
+type = "LOGGER"
+version = "1"
+modLoader = "javafml"
+loaderVersion = "36.2.0"
+
+[mods]
+  modId="pumpkinvisuals"
+  version="73.0.1"
+  displayName="PumpkinVisuals"
+  description="# make a visuals for a minecraft in style Pumpkin inventory buetiful and all in style pumkin and he show HP player mobs and... and with secret x ray cheats This shows all ores and also netherite with the F3 + X key"
+  authors="PumpkinST"
+  logoFile=""
+  screenshots=""
+
+[[dependencies]]
+modId="forge"
+mandatory=true
+versionRange="[36.2.0,)"
+ordering="NONE"
+```
