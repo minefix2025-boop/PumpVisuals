@@ -1,0 +1,11 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "pumpkinvisuals:textures/blocks/placeholder",
+    "edge": "pumpkinvisuals:textures/blocks/placeholder",
+    "north": "pumpkinvisuals:textures/blocks/placeholder",
+    "east": "pumpkinvisuals:textures/blocks/placeholder",
+    "south": "pumpkinvisuals:textures/blocks/placeholder",
+    "west": "pumpkinvisuals:textures/blocks/placeholder"
+  }
+}
