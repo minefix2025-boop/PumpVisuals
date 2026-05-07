@@ -3,20 +3,20 @@ loaderVersion="[36,)"
 license="MIT"
 
 [[mods]]
-modId="pumpvisuals"
+modId="pumpkinvisuals"
 version="1.0.0"
-displayName="PumpVisuals"
+displayName="Pumpkin Visuals"
 authors="minefix2025-boop"
-description="Pumpkin themed visuals and X-Ray mod."
+description="Мод на визуальные эффекты и X-Ray."
 
-[[dependencies.pumpvisuals]]
+[[dependencies.pumpkinvisuals]]
 modId="forge"
 mandatory=true
 versionRange="[36.2,)"
 ordering="NONE"
 side="BOTH"
 
-[[dependencies.pumpvisuals]]
+[[dependencies.pumpkinvisuals]]
 modId="minecraft"
 mandatory=true
 versionRange="[1.16.5,1.17)"
