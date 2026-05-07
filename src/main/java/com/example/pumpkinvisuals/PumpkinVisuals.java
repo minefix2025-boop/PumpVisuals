@@ -1,26 +1,28 @@
-package com.minefix.pumpvisuals;
+package com.minefix.pumpkinvisuals;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-@Mod("pumpvisuals")
-public class PumpVisuals {
-    public static final String MOD_ID = "pumpvisuals";
-    private static final Logger LOGGER = LogManager.getLogger();
+@Mod("pumpkinvisuals")
+public class PumpkinVisuals {
+    public static final String MOD_ID = "pumpkinvisuals";
 
-    public PumpVisuals() {
-        // Регистрация мода в шине событий Forge
+    public PumpkinVisuals() {
+        // Регистрация на шину событий Forge
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         MinecraftForge.EVENT_BUS.register(this);
-        LOGGER.info("PumpVisuals загружен!");
+    }
+
+    private void setup(final FMLCommonSetupEvent event) {
     }
 
     @SubscribeEvent
     public void onRegisterCommands(RegisterCommandsEvent event) {
-        // Регистрация нашей команды /xray
+        // Регистрация команды /xray
         XRayCommand.register(event.getDispatcher());
     }
 }
